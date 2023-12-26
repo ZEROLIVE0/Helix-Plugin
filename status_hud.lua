@@ -59,3 +59,7 @@ end
 -- Hook into the HUDPaint event to draw the stamina bar
 hook.Add("HUDPaint", "DrawStaminaBar", DrawStaminaBar)
 -- END: Add stamina bar
+
+function PLUGIN:ShouldHideBars()
+    return true
+end
